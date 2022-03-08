@@ -3,7 +3,7 @@
 
 n = int(input('Ввведите количество членов последовательности:  '))
 temp = 1
-list = [1]
+list = [temp]
 
 for i in range(n-1):	
 	temp = list[-1]* (-3)
