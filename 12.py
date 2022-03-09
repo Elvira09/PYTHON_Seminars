@@ -6,7 +6,7 @@
 n = int(input('Ввведите количество членов словаря:  '))
 start = int(input('Ввведите стартовую позицию словаря:  '))
 # n = 6
-# start = 1
+# start = 3
 key = list(range(start, n+1)) 
 value = list(range(start * 3 + 1, (n+1) * 3 + 1, 3)) 
 dictionary = {x: y for x, y in zip(key, value)} # https://docs-python.ru/tutorial/operatsii-slovarjami-dict-python/vyrazhenie-slovar/
