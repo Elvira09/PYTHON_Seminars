@@ -9,17 +9,18 @@
 n = int(input('Ввведите количество членов последовательности:  '))
 start = int(input('Ввведите стартовую позицию словаря:  '))
 # n = 8
-# start = 5
+# start = -5
 
-initial = list(range(start, n+1))
+initial = list(range(start, start+n))
 print(initial, ' - Исходная последовательность')
 temp = 1
 result = []
 
-for i in range(n + 1 - start):	
+for i in range(n):	
 	temp = initial[i] * (1 + initial[i])
 	result.append(temp)
 print(result,  ' - Результирующая последовательность')
 
 summ = sum(result)
 print(summ, ' - Сумма элементов результирующей последовательности')
+

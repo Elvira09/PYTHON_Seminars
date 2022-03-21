@@ -5,7 +5,7 @@ n = int(input('Ввведите количество членов последо
 temp = 1
 list = [temp]
 
-for i in range(n-1):	
-	temp = list[-1]* (-3)
+for i in range(n-1): # n-1 - потому что первый элемент задали = 1	
+	temp = list[-1] * (-3)
 	list.append(temp)
 print(list) 

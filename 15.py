@@ -9,6 +9,6 @@ temp = 1
 result = [temp]
 
 for i in range(n-1):	
-	temp = result[i]*list[i+1]
+	temp = result[i] * list[i+1]
 	result.append(temp)
 print(result,  ' - Результирующая последовательность')

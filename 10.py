@@ -5,12 +5,16 @@ import math
 X1 = float(input('Введите координаты первой точки по оси X: '))
 Y1 = float(input('Введите координаты первой точки по оси Y: '))
 Z1 = float(input('Введите координаты первой точки по оси Z: '))
+
 X2 = float(input('Введите координаты второй точки по оси X: '))	
 Y2 = float(input('Введите координаты второй точки по оси Y: '))
 Z2 = float(input('Введите координаты второй точки по оси Z: '))
 
-result1 = math.sqrt(pow((X2-X1),2) + pow((Y2-Y1),2))
+# result1 = ((X2-X1) ** 2 + (Y2-Y1) ** 2) ** 0.5
+result1 = round(math.sqrt(pow((X2-X1),2) + pow((Y2-Y1),2)), 4)
 print(f'Расстояние между точками в пространстве 2D {result1}')
 
-result2 = math.sqrt(pow((X2-X1),2) + pow((Y2-Y1),2) + pow((Z2-Z1),2))
+# result2 = ((X2-X1) ** 2 + (Y2-Y1) ** 2 + (Z2-Z1) ** 2) ** 0.5
+result2 = round(math.sqrt(pow((X2-X1),2) + pow((Y2-Y1),2) + pow((Z2-Z1),2)), 4)
 print(f'Расстояние между точками в пространстве 3D {result2}')
+
