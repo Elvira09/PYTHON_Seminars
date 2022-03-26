@@ -7,21 +7,19 @@
 # список: [], ищем: "123", ответ: -1
 
 
-## !НЕ ОТРАБОТАН ПОСЛЕДНИЙ ВАРИАНТ список: [], ищем: "123", ответ: -1
 
-str_lst = ["123", "234", 123, "567"]
-search_str = "123"
+str_lst = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
+search_str = "qwe"
 
 pos = []
-empty = []
 for i, x in enumerate(str_lst):
     if x == search_str:
         pos.append(i)
+if str_lst == [] or pos == [] or len(pos) == 1:
+	print('-1')
 # print(pos)
 
 for j, y in enumerate(pos):
     if 0 < j < 2:
         print(y)
-    else: 
-        print('-1')
-
+ 
