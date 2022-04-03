@@ -7,7 +7,7 @@
 import math
 
 
-lst = [2, 3, 4, 5, 6, 2, 4, 5, 10, 2, 5]
+lst = [2, 3, 5, 6]
 res_lst = []
 len_res_lst = math.ceil(len(lst)/2)
 temp = 0
@@ -18,5 +18,21 @@ for i, x in enumerate(lst):
         res_lst.append(temp)
 
 print(res_lst)
+
+
+# def MultPair(listMultPair):
+#     listAdd = []
+#     if (len(listMultPair) % 2 == 0):
+#         for i in range(0, len(listMultPair)//2):
+#             listAdd.append(listMultPair[i] * listMultPair[-1-i])
+#     else:
+#         for i in range(0, (len(listMultPair)+1)//2):
+#             listAdd.append(listMultPair[i] * listMultPair[-1-i])
+#     return listAdd
+
+
+# list1 = [2, 3, 4, 5, 6]
+# list2 = [2, 3, 4, 5, 6, 7]
+# print(MultPair(list1))
 
 

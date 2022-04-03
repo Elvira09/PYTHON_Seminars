@@ -21,3 +21,30 @@ while num > 0:
     num = num // 2
 print(b_num, ' - цикл')
 
+
+
+
+
+
+
+# Дополнительно:
+# перевести в десятичную
+
+# num_bin = str(input("введите двоичное число: "))
+# x = len(num_bin-1)
+# num_dec = 0
+# for i in num_bin:
+#     num_dec += (2 * int(i)) ** x
+#     x -= 1
+# print(num_dec)
+
+# # перевести в шестнадцатиричную
+
+# print(hex(num))
+
+
+
+
+
+
+

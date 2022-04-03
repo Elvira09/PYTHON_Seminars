@@ -19,4 +19,4 @@ a = 140
 b = 96
 nok = (a * b) / NOD(a, b)
     
-print(nok)
+print(f'НОК = {nok} для чисел {a} и {b}')

@@ -8,8 +8,8 @@
 
 
 
-str_lst = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
-search_str = "qwe"
+str_lst = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу", "йцу"]
+search_str = "йцу"
 
 pos = []
 for i, x in enumerate(str_lst):
@@ -22,4 +22,19 @@ if str_lst == [] or pos == [] or len(pos) == 1:
 for j, y in enumerate(pos):
     if 0 < j < 2:
         print(y)
+        
  
+# spisok_1 = []
+# stroka_1 = "йцу"
+# count = 0
+# print(spisok_1.count(stroka_1))
+# if spisok_1.count(stroka_1) <2:
+#     count = -1
+# else:
+#     for i in range(len(spisok_1)):
+#         if spisok_1[i] == stroka_1:
+#             count+=1
+#             if count ==2:
+#                 count = i
+#                 break
+# print(f'Искомое {stroka_1}, ответ {count}')
