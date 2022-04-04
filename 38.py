@@ -12,6 +12,5 @@ for i in range(len(list_text)):
     else: 
         res_text.append(list_text[i])
 
-str_res_text = " ".join(res_text)
-print(str_res_text)
-
+res_text = " ".join(res_text)
+print(res_text)
