@@ -3,7 +3,9 @@
 # в файл многочлен степени k. 
 # *Пример: k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 
+
 import random
+
 
 k = int(input('Введите k: '))
 lst = []
@@ -33,3 +35,20 @@ print(result)
 with open('Sem33_file.txt', 'w') as file:
     file.writelines(result)
 
+def Polynomial(k):
+    str = []
+    for i in range(0, k + 1):
+        coeff = random.randint(0, 100)
+        if i >= 2:
+            str.append(f"{coeff}*x^{i} + ")
+        elif i == 1:
+            str.append(f"{coeff}*x + ")
+        elif i == 0:
+            str.append(f"{coeff} = 0")
+    stroka = str[::-1]
+    result = ''.join(stroka)
+    with open("Sem33_file.txt", "a") as data:
+        data.write(result + '\n')
+
+
+Polynomial(5)

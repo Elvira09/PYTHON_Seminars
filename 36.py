@@ -5,19 +5,22 @@
 
 import random
 
-lst=[1, 5, 2, 3, 4, 6, 1, 7]
-res_lst =[]
-index = random.randrange(len(lst))
-# index = 7
-print(index)
-res_lst.append(lst[index])
-if index <= len(lst)-2:
-    index += 1
-    for index in range(index, len(lst)-1):
-        if res_lst[-1] < lst[index] < lst[index+1]:
-        	res_lst.append(lst[index])
-        elif res_lst[-1] < lst[index]:
-            res_lst.append(lst[index])
+lst = [1, 5, 2, 3, 4, 6, 1, 7]
+print(lst)
+
+# i = random.randrange(len(lst))
+i = 6
+print(i, ' - стартовый индекс')
+
+res_lst = []
+res_lst.append(lst[i])
+
+for i in range(i+1, len(lst)-1):
+    if res_lst[-1] <= lst[i]:
+        res_lst.append(lst[i])
+
 if res_lst[-1] < lst[-1]:
     res_lst.append(lst[-1])
+
 print(res_lst)
+
