@@ -2,6 +2,10 @@
 # Среди чисел не хватает одного, чтобы выполнялось условие A[i] - 1 = A[i-1]. 
 # Найти его.
 
+lst = '1 2 3 4 5 7 8 9'
+init_data = open('Sem35_file.txt', 'w')
+init_data.writelines(lst)
+init_data.close()
 
 with open('Sem35_file.txt', 'r') as file:
     data = file.read()

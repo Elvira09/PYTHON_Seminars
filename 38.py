@@ -15,6 +15,7 @@ for i in range(len(list_text)):
         res_text.append(list_text[i])
 
 res_text = " ".join(res_text)
+<<<<<<< HEAD
 print('# мой вариант')
 print(res_text)
 
@@ -26,4 +27,7 @@ print(text)
 
 
 
+=======
+print(res_text)
+>>>>>>> a2373d67ec7bec56956d5aecfb97ad8bb8333e8c
 
