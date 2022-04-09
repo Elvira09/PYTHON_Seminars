@@ -9,8 +9,8 @@ lst = [1, 5, 2, 3, 4, 6, 1, 7]
 print(lst)
 
 print('\nВариант 1')
-# i = random.randrange(len(lst))
-i = 0
+i = random.randrange(len(lst))
+# i = 0
 print(i, ' - стартовый индекс')
 
 res_lst = []
@@ -29,13 +29,3 @@ print(res_lst)
 # другой вариант
 print('\nВариант 2')
 
-def ascending_sequence(num):
-    res = [num[random.randrange(len(num))]]
-    print(res, ' - стартовый индекс')
-    for i in num:
-        if num[i] > max(res):
-            res.append(num[i])
-    return res
-
-num = [1, 5, 2, 3, 4, 6, 1, 7]
-print(ascending_sequence(num)) 
