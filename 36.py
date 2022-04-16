@@ -25,7 +25,3 @@ if res_lst[-1] < lst[-1]:
 
 print(res_lst)
 
-
-# другой вариант
-print('\nВариант 2')
-

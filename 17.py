@@ -14,7 +14,7 @@ def get_list(x):
 n = int(input('Введите количество элементов списка:  '))
 # кладем индексы в файл
 pos = list(range(0, n, 2))
-with open('Sem17_file.txt', 'w') as data:   
+with open('Seminars/Sem17_file.txt', 'w') as data:   
     for i in str(pos):
         if i.isdigit():
  	        data.write(i + '\n')
@@ -23,7 +23,7 @@ lst = get_list(n)
 print(lst, '  - исходный список')
 
 # считываем данные/позиции из файл
-with open('Sem17_file.txt') as file:
+with open('Seminars/Sem17_file.txt') as file:
     lines = file.read().splitlines()
 
 lines = list(map(int, lines))
